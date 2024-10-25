@@ -13,12 +13,12 @@ Extracts the `.7z` files one by one into the current directory, finds any of my 
 
 Saves results to a `./<your username>` directory -- one JSON file per channel. This saves even if it finds no logs, so in case this crashes, it can re-started and already processed files will be skipped. To combine those into a single file, you can use [`jq`](https://github.com/stedolan/jq), like `jq '.[]' <./<your username>/* | jq -r --slurp > comments.json`
 
-Created to be used as part of [HPI](https://github.com/seanbreckenridge/HPI)
+Created to be used as part of [HPI](https://github.com/purarue/HPI)
 
 ### Example Usage
 
 ```bash
-git clone https://github.com/seanbreckenridge/overrustle_parser
+git clone https://github.com/purarue/overrustle_parser
 cd ./overrustle_parser
 python3 -m pip install -r ./requirements.txt
 python3 parse.py ~/Downloads/OverrustleLogs\ Archive/ moobot
